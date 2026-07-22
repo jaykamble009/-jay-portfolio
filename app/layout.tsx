@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     creator: '@jaykamble',
   },
   verification: {
-    google: "google-site-verification-placeholder",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
   }
 }
 export const viewport: Viewport = {
