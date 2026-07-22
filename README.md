@@ -74,8 +74,8 @@ Follow these steps to set up the project locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/jaykamble009/glowing-orb-background-2.git
-cd glowing-orb-background-2
+git clone https://github.com/jaykamble009/jay-portfolio.git
+cd jay-portfolio
 ```
 
 ### 2. Install Dependencies
