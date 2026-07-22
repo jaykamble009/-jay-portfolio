@@ -1,0 +1,45 @@
+{
+  "brand": {
+    "name": "Jay Kamble",
+    "role": "Full Stack Developer & AI Engineer",
+    "bio": "Jay Kamble Portfolio - Building scalable web applications, AI-powered products, and modern SaaS platforms with exceptional user experiences."
+  },
+  "availability": {
+    "status": "Open to Work",
+    "type": "Full-time & Freelance"
+  },
+  "links": {
+    "navigation": [
+      { "name": "Home", "href": "#home" },
+      { "name": "About", "href": "#about" },
+      { "name": "Projects", "href": "#projects" },
+      { "name": "Skills", "href": "#skills" }
+    ],
+    "resources": [
+      { "name": "Resume", "href": "/resume.pdf" },
+      { "name": "GitHub", "href": "https://github.com/jaykamble009" },
+      { "name": "LinkedIn", "href": "https://linkedin.com/in/jaykamble" }
+    ],
+    "legal": [
+      { "name": "Privacy Policy", "href": "/privacy" },
+      { "name": "Terms & Conditions", "href": "/terms" },
+      { "name": "Sitemap", "href": "/sitemap.xml" }
+    ]
+  },
+  "contact": {
+    "email": "jk365242@gmail.com",
+    "location": "CIDCO Waluj, Chhatrapati Sambhajinagar, Maharashtra, India"
+  },
+  "social": [
+    { "name": "GitHub", "icon": "Github", "href": "https://github.com/jaykamble009" },
+    { "name": "LinkedIn", "icon": "Linkedin", "href": "https://linkedin.com/in/jaykamble" },
+    { "name": "Twitter", "icon": "Twitter", "href": "https://twitter.com/jaykamble" },
+    { "name": "Mail", "icon": "Mail", "href": "mailto:jk365242@gmail.com" }
+  ],
+  "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
+  "meta": {
+    "version": "v2.0.0",
+    "lastUpdated": "July 2026",
+    "copyright": "© 2026 Jay Kamble (JayKamble009). All rights reserved."
+  }
+}

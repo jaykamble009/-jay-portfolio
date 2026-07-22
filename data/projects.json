@@ -1,0 +1,461 @@
+[
+  {
+    "id": "pdfino",
+    "title": "PDFino – AI PDF Editor",
+    "category": "AI • Productivity • SaaS",
+    "description": "A modern AI-powered PDF editor that allows users to merge, split, compress, convert, organize, protect, unlock, watermark, rotate, and manage PDF files with a beautiful, responsive interface.",
+    "overview": "PDFino is a comprehensive web-based PDF utility suite designed to streamline document workflows without requiring heavy desktop software. Built primarily for students, professionals, and small businesses, the platform offers fast, secure, and intuitive PDF manipulation tools. The main objective was to create a privacy-first, high-performance editor that processes documents directly in the browser wherever possible, minimizing server round-trips and ensuring maximum security for sensitive user data.",
+    "features": [
+      "AI PDF Tools",
+      "Merge & Split PDFs",
+      "Compress PDFs",
+      "Convert Documents",
+      "Secure Processing",
+      "Fast Performance",
+      "Responsive Design"
+    ],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "techStackDetailed": {
+      "Frontend": [
+        "Next.js 14",
+        "React 18",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Lucide Icons"
+      ],
+      "Backend": [
+        "Next.js Route Handlers",
+        "Node.js"
+      ],
+      "Database": [
+        "Supabase PostgreSQL"
+      ],
+      "Authentication": [
+        "Supabase Auth"
+      ],
+      "Libraries": [
+        "pdf-lib",
+        "zod",
+        "react-hook-form"
+      ],
+      "Deployment": [
+        "Vercel Edge Network"
+      ]
+    },
+    "architectureTimeline": [
+      {
+        "step": "User Action",
+        "description": "Browser UI interaction"
+      },
+      {
+        "step": "Web Worker",
+        "description": "Off-thread PDF parsing"
+      },
+      {
+        "step": "Edge API",
+        "description": "AI Analysis Routing"
+      },
+      {
+        "step": "Supabase",
+        "description": "Auth & Rate Limiting"
+      },
+      {
+        "step": "Client Render",
+        "description": "Blob URL generation"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Large File Handling",
+        "description": "Processing PDFs over 50MB in the browser caused severe main-thread blocking, leading to UI freezes and a poor user experience."
+      },
+      {
+        "title": "Privacy & Security",
+        "description": "Users are hesitant to upload sensitive legal or financial documents to third-party servers for simple tasks like merging or splitting."
+      },
+      {
+        "title": "Complex State Management",
+        "description": "Managing the state of multiple uploaded files, their individual processing statuses, and the final combined output required a robust architecture."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Web Workers Implementation",
+        "description": "Migrated all heavy PDF manipulation tasks (using pdf-lib) to dedicated Web Workers. This kept the UI thread running at 60fps even during complex document processing."
+      },
+      {
+        "title": "Client-Side First Processing",
+        "description": "Engineered the platform to perform 90% of operations entirely in the browser. Documents only touch the server when utilizing specific AI analysis features."
+      },
+      {
+        "title": "Custom Zustand Store",
+        "description": "Implemented a centralized, atomic state management solution using Zustand to track individual file progress, error boundaries, and output blobs efficiently."
+      }
+    ],
+    "role": "Full Stack Developer",
+    "responsibilities": [
+      "End-to-End System Architecture",
+      "UI/UX Design & Prototyping",
+      "Core PDF Engine Integration",
+      "Performance Optimization",
+      "Vercel Deployment & CI/CD"
+    ],
+    "developmentProcess": [
+      "Research & Planning",
+      "UI Prototyping",
+      "Core PDF Engine",
+      "State Management",
+      "AI Integration",
+      "Performance Testing",
+      "Production Launch"
+    ],
+    "statistics": [
+      {
+        "label": "Development Time",
+        "value": "3 Weeks"
+      },
+      {
+        "label": "Performance Score",
+        "value": "98/100"
+      },
+      {
+        "label": "Core Features",
+        "value": "12+"
+      },
+      {
+        "label": "Client-side ops",
+        "value": "90%"
+      }
+    ],
+    "performance": [
+      "98 Lighthouse Score",
+      "< 1s Time to Interactive",
+      "Zero Cumulative Layout Shift",
+      "100% Serverless"
+    ],
+    "futureRoadmap": [
+      "Real-time Collaboration",
+      "OCR Text Extraction",
+      "Desktop PWA Support",
+      "Enterprise SSO"
+    ],
+    "coverImage": "/projects/pdfino/cover.png",
+    "gallery": [
+      "/projects/pdfino/cover.png"
+    ],
+    "status": "Live",
+    "liveDemo": "https://pdfino.online",
+    "github": "https://github.com/jaykamble009/pdfino",
+    "color": "from-cyan-400 to-blue-500",
+    "icon": "FileText"
+  },
+  {
+    "id": "next-class-quiz",
+    "title": "Next Class Quiz",
+    "category": "EdTech • AI",
+    "description": "A modern online examination platform for schools, colleges, coaching institutes, and training organizations featuring secure quizzes, real-time results, and a clean admin dashboard.",
+    "overview": "Next Class Quiz is an end-to-end educational assessment platform designed to modernize the way institutions conduct examinations. Traditional testing methods are time-consuming to grade and difficult to secure remotely. This platform solves those issues by providing teachers with an intuitive quiz builder and giving students a distraction-free, secure testing environment with instant automated grading and analytics.",
+    "features": [
+      "Online Exams",
+      "MCQ Tests",
+      "Real-time Results",
+      "Student Dashboard",
+      "Admin Panel",
+      "Responsive UI"
+    ],
+    "techStack": [
+      "React",
+      "Next.js",
+      "Firebase",
+      "TypeScript"
+    ],
+    "techStackDetailed": {
+      "Frontend": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "Backend": [
+        "Firebase Cloud Functions",
+        "Next.js API"
+      ],
+      "Database": [
+        "Firebase Firestore"
+      ],
+      "Authentication": [
+        "Firebase Auth"
+      ],
+      "State Management": [
+        "React Context"
+      ],
+      "Deployment": [
+        "Vercel"
+      ]
+    },
+    "architectureTimeline": [
+      {
+        "step": "Student Login",
+        "description": "Firebase Auth"
+      },
+      {
+        "step": "Fetch Exam",
+        "description": "Firestore Realtime Sync"
+      },
+      {
+        "step": "Answer Submission",
+        "description": "Optimistic UI Update"
+      },
+      {
+        "step": "Auto-Grading",
+        "description": "Cloud Function Trigger"
+      },
+      {
+        "step": "Analytics",
+        "description": "Admin Dashboard Update"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Real-time Synchronization",
+        "description": "Ensuring that exam timers and submission states remained accurate even if a student lost internet connection temporarily."
+      },
+      {
+        "title": "Anti-Cheating Mechanisms",
+        "description": "Building a secure environment that prevents tab-switching or copy-pasting during active examinations."
+      },
+      {
+        "title": "Concurrent Scaling",
+        "description": "Handling sudden spikes in database reads/writes when an entire class of 100+ students submits their exams simultaneously at the deadline."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Local Storage Fallback",
+        "description": "Implemented a robust offline-first synchronization system that caches answers locally and syncs them to Firestore once the connection is restored."
+      },
+      {
+        "title": "Visibility API Integration",
+        "description": "Utilized the Page Visibility API to track and warn students when navigating away from the active exam window."
+      },
+      {
+        "title": "Batched Writes",
+        "description": "Optimized Firestore interactions using batched writes and localized the grading logic to highly concurrent Cloud Functions to prevent bottlenecking."
+      }
+    ],
+    "role": "Lead Full Stack Developer",
+    "responsibilities": [
+      "Database Schema Design",
+      "Real-time Sync Implementation",
+      "Frontend Architecture",
+      "Security Rules Configuration",
+      "Admin Dashboard Development"
+    ],
+    "developmentProcess": [
+      "Requirements Gathering",
+      "Schema Design",
+      "Auth Integration",
+      "Exam Engine",
+      "Admin Panel",
+      "Beta Testing",
+      "Deployment"
+    ],
+    "statistics": [
+      {
+        "label": "Development Time",
+        "value": "4 Weeks"
+      },
+      {
+        "label": "Concurrent Users",
+        "value": "500+"
+      },
+      {
+        "label": "Uptime",
+        "value": "99.9%"
+      },
+      {
+        "label": "Test Coverage",
+        "value": "85%"
+      }
+    ],
+    "performance": [
+      "Real-time Sync < 100ms",
+      "Optimized Firestore Reads",
+      "Lazy Loaded Dashboards"
+    ],
+    "futureRoadmap": [
+      "AI Question Generation",
+      "Proctoring Integration",
+      "Multi-language Support",
+      "Detailed Export Reports"
+    ],
+    "coverImage": "/projects/next-class-quiz/cover.png",
+    "gallery": [
+      "/projects/next-class-quiz/cover.png"
+    ],
+    "status": "Live",
+    "liveDemo": "https://class-quiz-portal-git-master-jaykamble009s-projects.vercel.app/",
+    "github": "https://github.com/jaykamble009/next-class-quiz",
+    "color": "from-purple-400 to-pink-500",
+    "icon": "GraduationCap"
+  },
+  {
+    "id": "eventhub",
+    "title": "EventHub – Event Management Platform",
+    "category": "Full Stack Web Application",
+    "description": "A complete event management platform for creating, managing, and booking events with an intuitive admin dashboard and modern user experience.",
+    "overview": "EventHub is a comprehensive full-stack application designed to remove the friction from event planning and ticketing. Built for organizers handling everything from small meetups to large-scale tech conferences, it replaces fragmented spreadsheets with a unified dashboard. The primary goal was to create a seamless booking flow for attendees while providing powerful analytics and management tools for organizers.",
+    "features": [
+      "Event Registration",
+      "Event Booking",
+      "Admin Dashboard",
+      "User Authentication",
+      "Event Analytics",
+      "Responsive Design"
+    ],
+    "techStack": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ],
+    "techStackDetailed": {
+      "Frontend": [
+        "React 18",
+        "Tailwind CSS",
+        "Axios",
+        "React Router"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express.js",
+        "RESTful API"
+      ],
+      "Database": [
+        "MongoDB",
+        "Mongoose"
+      ],
+      "Authentication": [
+        "JWT (JSON Web Tokens)",
+        "Bcrypt"
+      ],
+      "Storage": [
+        "Cloudinary"
+      ],
+      "Deployment": [
+        "Render",
+        "Vercel"
+      ]
+    },
+    "architectureTimeline": [
+      {
+        "step": "Client SPA",
+        "description": "React Router Navigation"
+      },
+      {
+        "step": "Express API",
+        "description": "RESTful Endpoints"
+      },
+      {
+        "step": "JWT Validation",
+        "description": "Auth Middleware"
+      },
+      {
+        "step": "MongoDB",
+        "description": "Mongoose Query Exec"
+      },
+      {
+        "step": "JSON Response",
+        "description": "UI Hydration"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Complex Data Relationality",
+        "description": "Managing the complex relationships between Users, Events, Tickets, and Organizers within a NoSQL database like MongoDB."
+      },
+      {
+        "title": "Booking Race Conditions",
+        "description": "Preventing double-booking when multiple users attempt to purchase the final available tickets for a popular event simultaneously."
+      },
+      {
+        "title": "Image Optimization",
+        "description": "Handling high-resolution event banner uploads without bloating the server storage or drastically increasing page load times for users."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Mongoose Population",
+        "description": "Designed a heavily normalized NoSQL schema relying on strict referencing and optimized Mongoose `.populate()` queries to maintain data integrity."
+      },
+      {
+        "title": "Atomic Operations",
+        "description": "Implemented atomic MongoDB updates (`$inc`, `$set`) alongside application-level locking mechanisms during the checkout flow to strictly guarantee ticket availability."
+      },
+      {
+        "title": "Cloudinary Pipeline",
+        "description": "Integrated a direct-to-cloud upload pipeline using Cloudinary, automatically compressing and transforming images on the fly before serving them via CDN."
+      }
+    ],
+    "role": "Full Stack Software Engineer",
+    "responsibilities": [
+      "REST API Design & Development",
+      "MongoDB Schema Engineering",
+      "Frontend SPA Implementation",
+      "Authentication Flow (JWT)",
+      "Deployment Configuration"
+    ],
+    "developmentProcess": [
+      "API Specification",
+      "Database Modeling",
+      "Backend Implementation",
+      "Frontend Integration",
+      "State Management",
+      "E2E Testing",
+      "Deployment"
+    ],
+    "statistics": [
+      {
+        "label": "Development Time",
+        "value": "5 Weeks"
+      },
+      {
+        "label": "API Endpoints",
+        "value": "25+"
+      },
+      {
+        "label": "Database Collections",
+        "value": "6"
+      },
+      {
+        "label": "Lighthouse Score",
+        "value": "95"
+      }
+    ],
+    "performance": [
+      "Optimized NoSQL Queries",
+      "CDN Image Delivery",
+      "Stateless JWT Auth"
+    ],
+    "futureRoadmap": [
+      "Stripe Payment Integration",
+      "QR Code Check-ins",
+      "Automated Email Reminders",
+      "Social Media Sharing"
+    ],
+    "coverImage": "/projects/eventhub/cover.png",
+    "gallery": [
+      "/projects/eventhub/cover.png"
+    ],
+    "status": "Live",
+    "liveDemo": "https://eventhub-lz26.onrender.com/",
+    "github": "https://github.com/jaykamble009/eventhub",
+    "color": "from-emerald-400 to-teal-500",
+    "icon": "Calendar"
+  }
+]

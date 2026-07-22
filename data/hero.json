@@ -1,0 +1,32 @@
+{
+  "name": "Jay Kamble",
+  "headline": "Full Stack Developer",
+  "summary": "Full Stack Developer passionate about building scalable web applications, AI-powered SaaS products, and modern user experiences using React, Next.js, TypeScript, Node.js, PostgreSQL, and Tailwind CSS.",
+  "roles": [
+    "Full Stack Developer",
+    "React & Next.js Engineer",
+    "AI SaaS Architect",
+    "TypeScript Specialist"
+  ],
+  "availability": "Open to Full-Time & Remote Roles",
+  "location": "Chhatrapati Sambhajinagar, India",
+  "techBadges": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "PostgreSQL",
+    "Tailwind CSS"
+  ],
+  "highlights": [
+    { "icon": "🎓", "label": "B.Sc. IT Graduate" },
+    { "icon": "🚀", "label": "Full Stack Projects" },
+    { "icon": "💻", "label": "Modern SaaS Apps" },
+    { "icon": "🌍", "label": "Open To Work" }
+  ],
+  "socials": {
+    "github": "https://github.com/jaykamble009",
+    "linkedin": "https://linkedin.com/in/jaykamble",
+    "email": "mailto:jk365242@gmail.com"
+  }
+}

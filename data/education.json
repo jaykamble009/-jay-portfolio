@@ -1,0 +1,40 @@
+[
+  {
+    "type": "degree",
+    "year": "2026",
+    "title": "Bachelor of Science in Information Technology (B.Sc. IT)",
+    "status": "Graduated",
+    "date": "June 2026",
+    "scoreLabel": "CGPA",
+    "scoreValue": "7.1 / 10",
+    "institution": "Deogiri College, Chhatrapati Sambhajinagar",
+    "university": "Dr. Babasaheb Ambedkar Marathwada University",
+    "description": "Successfully completed my Bachelor of Science in Information Technology with a CGPA of 7.1/10. Developed strong skills in software engineering, full-stack web development, and problem-solving through hands-on practical projects.",
+    "subjects": [
+      "Data Structures & Algorithms", "Web Development", "Database Management Systems", "Software Engineering", 
+      "Python Programming", "JavaScript", "PHP", "Operating Systems"
+    ]
+  },
+  {
+    "type": "higher-secondary",
+    "year": "2023",
+    "title": "Higher Secondary (12th) - MCVC Computer Technology",
+    "status": "Completed",
+    "date": "April 2023",
+    "scoreLabel": "Marks",
+    "scoreValue": "73.83%",
+    "institution": "Deogiri College, Chhatrapati Sambhajinagar",
+    "description": "Completed Higher Secondary education with a focus on Computer Technology, gaining practical hardware, software, and programming fundamentals."
+  },
+  {
+    "type": "secondary",
+    "year": "2021",
+    "title": "Secondary School (10th)",
+    "status": "Completed",
+    "date": "June 2021",
+    "scoreLabel": "Marks",
+    "scoreValue": "72.20%",
+    "institution": "Yashshree School, CIDCO Waluj-1",
+    "description": "Successfully completed Secondary School education, building a strong academic foundation."
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "profile": {
+    "name": "Jay Kamble",
+    "tagline": "Full Stack Developer | AI Engineer | SaaS Builder",
+    "resumeLink": "/resume.pdf",
+    "social": {
+      "github": "https://github.com/jaykamble009",
+      "linkedin": "https://linkedin.com/in/jaykamble",
+      "email": "jk365242@gmail.com"
+    }
+  },
+  "introduction": "Hi, I'm Jay Kamble (JayKamble009), a Full Stack Developer based in Chhatrapati Sambhajinagar, Maharashtra. I enjoy building useful software that solves real-world problems while continuously learning and creating intuitive, user-focused experiences. I'm currently focused on building scalable web applications and AI-powered SaaS products with an emphasis on performance, clean architecture, and user experience.",
+  "journey": "I've always been drawn to how things work under the hood. During my B.Sc. in Information Technology at Deogiri College (Dr. Babasaheb Ambedkar Marathwada University), I realized early on that theory isn't enough. So, instead of just reading textbooks, I spent my time actually building things. Breaking production, fixing bugs, and deploying real full-stack apps with React, Next.js, and Node.js is how I really learned to code.",
+
+  "drives": [
+    "Building useful software",
+    "Solving real-world problems",
+    "Continuous learning",
+    "Creating great user experiences"
+  ],
+  "focus": [
+    "Building scalable web applications",
+    "Exploring AI-powered solutions",
+    "Designing SaaS products",
+    "Improving software architecture"
+  ],
+  "ctaTitle": "Available for Full-Time Roles & Projects",
+  "cta": "Currently open to joining innovative engineering teams, undertaking select freelance contracts, or collaborating on high-impact web and AI SaaS products."
+}

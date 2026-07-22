@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient (Premium Dark Glass) -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111115" />
+      <stop offset="100%" stop-color="#050508" />
+    </linearGradient>
+    
+    <!-- JK Glow Gradient -->
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfdfd" />
+      <stop offset="100%" stop-color="#9ca3af" />
+    </linearGradient>
+
+    <!-- Subtle Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Plate (Rounded Squircle) -->
+  <rect x="0" y="0" width="512" height="512" rx="120" fill="url(#bg-grad)" />
+  
+  <!-- Outer glowing rim -->
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="url(#accent-grad)" stroke-width="4" opacity="0.4" />
+
+  <!-- The J -->
+  <path d="M 230 160 L 230 310 C 230 350, 190 360, 160 340 L 160 300 C 180 310, 190 310, 190 290 L 190 160 Z" fill="url(#text-grad)" />
+  
+  <!-- The K (Geometric Intersecting shapes) -->
+  <path d="M 280 160 L 320 160 L 320 230 L 370 160 L 420 160 L 350 250 L 430 360 L 380 360 L 320 270 L 320 360 L 280 360 Z" fill="url(#text-grad)" />
+  
+  <!-- Accent Glow Dot / Geometry -->
+  <circle cx="340" cy="256" r="8" fill="#8b5cf6" opacity="0.8" />
+</svg>

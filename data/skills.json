@@ -1,0 +1,95 @@
+{
+  "featured": [
+    "React.js", "Next.js", "TypeScript", "Python", "SQL", "Power BI", "Tailwind CSS", "PostgreSQL", "Supabase", "GitHub"
+  ],
+  "learning": {
+    "title": "Currently Learning",
+    "description": "Technologies I am actively exploring to expand my expertise in modern software architecture.",
+    "skills": ["Advanced Next.js", "Node.js", "Express.js", "AI-powered SaaS Development", "System Design"],
+    "icon": "Rocket"
+  },
+  "categories": [
+    {
+      "id": "frontend",
+      "title": "Frontend Development",
+      "icon": "Layout",
+      "skills": [
+        { "name": "HTML5", "desc": "Markup language for web structure." },
+        { "name": "CSS3", "desc": "Styling language for web design." },
+        { "name": "JavaScript (ES6+)", "desc": "Dynamic scripting for interactivity." },
+        { "name": "TypeScript", "desc": "Strongly typed JavaScript." },
+        { "name": "React.js", "desc": "UI library for components." },
+        { "name": "Next.js", "desc": "React framework for production." },
+        { "name": "Tailwind CSS", "desc": "Utility-first CSS framework." },
+        { "name": "Bootstrap", "desc": "CSS framework for responsive design." },
+        { "name": "jQuery", "desc": "Legacy JS DOM manipulation." }
+      ]
+    },
+    {
+      "id": "backend",
+      "title": "Backend Development",
+      "icon": "Server",
+      "skills": [
+        { "name": "Node.js", "desc": "JavaScript runtime environment." },
+        { "name": "Express.js", "desc": "Web framework for Node.js." }
+      ]
+    },
+    {
+      "id": "database",
+      "title": "Database",
+      "icon": "Database",
+      "skills": [
+        { "name": "SQL", "desc": "Structured Query Language." },
+        { "name": "PostgreSQL", "desc": "Advanced open source RDBMS." },
+        { "name": "Supabase", "desc": "Open source Firebase alternative." },
+        { "name": "Firebase", "desc": "BaaS platform by Google." }
+      ]
+    },
+    {
+      "id": "languages",
+      "title": "Programming Languages",
+      "icon": "Code2",
+      "skills": [
+        { "name": "JavaScript", "desc": "Web programming language." },
+        { "name": "TypeScript", "desc": "Typed JavaScript." },
+        { "name": "Python", "desc": "Versatile high-level language." },
+        { "name": "SQL", "desc": "Database query language." }
+      ]
+    },
+    {
+      "id": "analytics",
+      "title": "Data Analytics",
+      "icon": "BarChart3",
+      "skills": [
+        { "name": "Power BI", "desc": "Business analytics service by Microsoft." },
+        { "name": "SQL", "desc": "Data extraction and manipulation." },
+        { "name": "Data Visualization", "desc": "Graphical representation of data." },
+        { "name": "Dashboard Development", "desc": "Building interactive data views." }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools & Platforms",
+      "icon": "Wrench",
+      "skills": [
+        { "name": "Git", "desc": "Version control system." },
+        { "name": "GitHub", "desc": "Hosting for software development." },
+        { "name": "VS Code", "desc": "Source-code editor." },
+        { "name": "Postman", "desc": "API platform for developers." },
+        { "name": "Figma", "desc": "Collaborative interface design tool." },
+        { "name": "Vercel", "desc": "Deployment and hosting platform." },
+        { "name": "npm", "desc": "Package manager for JavaScript." }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI & Development",
+      "icon": "Bot",
+      "skills": [
+        { "name": "AI Integration", "desc": "Implementing AI models via APIs." },
+        { "name": "Prompt Engineering", "desc": "Optimizing LLM interactions." },
+        { "name": "REST APIs", "desc": "Web services architecture." }
+      ]
+    }
+  ]
+}
