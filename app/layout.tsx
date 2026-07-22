@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     creator: '@jaykamble',
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "B8f1_fhrIFGYcCHksHWmTB7yFOfWLN54K_2YDxCXyN4",
   }
 }
 export const viewport: Viewport = {
