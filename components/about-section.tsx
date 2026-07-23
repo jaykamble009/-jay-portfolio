@@ -158,18 +158,13 @@ export function AboutSection() {
               <h3 className="text-2xl font-bold flex items-center gap-2 text-foreground">
                 <span className="text-2xl">👋</span> Introduction
               </h3>
-              <div className="prose prose-invert max-w-none text-lg text-muted-foreground leading-relaxed min-h-[4rem]">
+              <div className="prose prose-invert max-w-none text-base sm:text-lg text-muted-foreground leading-relaxed">
                 <p>
                   <TypewriterText 
                     text={aboutData.introduction} 
-                    delay={0.2} 
-                    speed={15} 
+                    delay={0.1} 
+                    speed={12} 
                     highlightKeywords={["Full Stack Developer", "scalable SaaS products", "clean code", "intuitive user experiences", "continuous learning", "fast", "scalable", "user-friendly"]}
-                    onComplete={() => {
-                      setTimeout(() => {
-                        setShowJourney(true)
-                      }, 600)
-                    }}
                   />
                 </p>
               </div>
@@ -178,20 +173,20 @@ export function AboutSection() {
             {/* My Journey */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={showJourney ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               className="space-y-4"
             >
               <h3 className="text-2xl font-bold flex items-center gap-2 text-foreground">
                 <Rocket className="w-6 h-6 text-accent" /> My Journey
               </h3>
-              <div className="prose prose-invert max-w-none text-lg text-muted-foreground leading-relaxed min-h-[8rem]">
+              <div className="prose prose-invert max-w-none text-base sm:text-lg text-muted-foreground leading-relaxed">
                 <p>
                   <TypewriterText 
                     text={aboutData.journey} 
-                    delay={0.2} 
-                    speed={15} 
-                    startTypingProp={showJourney}
+                    delay={0.1} 
+                    speed={12} 
                     highlightKeywords={["B.Sc. in Information Technology", "practical applications", "seamless digital experiences", "Computer Technology"]}
                   />
                 </p>

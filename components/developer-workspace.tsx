@@ -6,7 +6,7 @@ import { Terminal, Code2, Cpu, Database, Cloud } from 'lucide-react'
 
 export function DeveloperWorkspace() {
   return (
-    <div className="relative w-full h-[500px] lg:h-[600px] flex items-center justify-center perspective-[1000px]">
+    <div className="relative w-full py-4 lg:py-0 flex items-center justify-center perspective-[1000px]">
       {/* Glow effect behind */}
       <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl opacity-50 rounded-full" />
 

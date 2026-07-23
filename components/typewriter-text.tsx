@@ -26,10 +26,10 @@ export function TypewriterText({
   const [isReady, setIsReady] = useState(false)
   
   const ref = useRef<HTMLSpanElement>(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const isInView = useInView(ref, { once: true, amount: 0.1 })
   const shouldReduceMotion = useReducedMotion()
 
-  // On mount, clear the text so we can start typing
+  // On mount, clear the text so we can start typing if motion is enabled
   useEffect(() => {
     setIsReady(true)
     if (!shouldReduceMotion) {
@@ -42,14 +42,25 @@ export function TypewriterText({
     if (!isReady) return
 
     if (shouldReduceMotion) {
-      if (startTypingProp && !hasCompleted) {
+      setDisplayText(text)
+      if (!hasCompleted) {
         setHasCompleted(true)
         onComplete?.()
       }
       return
     }
 
-    if (isInView && startTypingProp && !hasCompleted) {
+    // Safety fallback: if not in view after 2s, force show text
+    const fallbackTimer = setTimeout(() => {
+      if (!hasCompleted) {
+        setDisplayText(text)
+        setHasCompleted(true)
+        setCursorVisible(false)
+        onComplete?.()
+      }
+    }, (delay + (text.length * speed) / 1000 + 2) * 1000)
+
+    if ((isInView || startTypingProp) && !hasCompleted) {
       let timeoutId: NodeJS.Timeout
       let intervalId: NodeJS.Timeout
       
@@ -64,7 +75,7 @@ export function TypewriterText({
             setTimeout(() => {
               setCursorVisible(false)
               onComplete?.()
-            }, 1000)
+            }, 600)
           }
         }, speed)
       }
@@ -73,8 +84,11 @@ export function TypewriterText({
       return () => {
         clearTimeout(timeoutId)
         clearInterval(intervalId)
+        clearTimeout(fallbackTimer)
       }
     }
+
+    return () => clearTimeout(fallbackTimer)
   }, [isInView, hasCompleted, text, delay, speed, shouldReduceMotion, isReady, startTypingProp, onComplete])
 
   return (
