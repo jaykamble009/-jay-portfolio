@@ -47,7 +47,7 @@ const commandsMap: Record<string, () => CommandResponse> = {
     output: (
       <div className="flex flex-col gap-2 mt-2 mb-4">
         <div><span className="text-muted-foreground w-24 inline-block">GitHub:</span> <a href="https://github.com/jaykamble009" target="_blank" className="text-primary hover:underline">github.com/jaykamble009</a></div>
-        <div><span className="text-muted-foreground w-24 inline-block">LinkedIn:</span> <a href="https://linkedin.com/in/jaykamble" target="_blank" className="text-primary hover:underline">linkedin.com/in/jaykamble</a></div>
+        <div><span className="text-muted-foreground w-24 inline-block">LinkedIn:</span> <a href="https://www.linkedin.com/in/jay-kamble-425892366" target="_blank" className="text-primary hover:underline">linkedin.com/in/jaykamble</a></div>
         <div><span className="text-muted-foreground w-24 inline-block">Email:</span> <a href="mailto:jk365242@gmail.com" className="text-primary hover:underline">jk365242@gmail.com</a></div>
       </div>
     )
@@ -138,7 +138,7 @@ const commandsMap: Record<string, () => CommandResponse> = {
   'linkedin': () => ({
     output: 'Opening LinkedIn Profile...',
     action: 'link',
-    payload: 'https://linkedin.com/in/jaykamble'
+    payload: 'https://www.linkedin.com/in/jay-kamble-425892366'
   }),
   'email': () => ({
     output: 'Opening Mail Client...',
@@ -191,7 +191,7 @@ const commandsMap: Record<string, () => CommandResponse> = {
         <ul className="space-y-2">
           <li><span className="text-muted-foreground w-20 inline-block">Email:</span> <a href="mailto:jk365242@gmail.com" className="text-primary hover:underline">jk365242@gmail.com</a></li>
           <li><span className="text-muted-foreground w-20 inline-block">Resume:</span> <a href="/resume.pdf" target="_blank" className="text-primary hover:underline">Download</a></li>
-          <li><span className="text-muted-foreground w-20 inline-block">LinkedIn:</span> <a href="https://linkedin.com/in/jaykamble" target="_blank" className="text-primary hover:underline">Profile</a></li>
+          <li><span className="text-muted-foreground w-20 inline-block">LinkedIn:</span> <a href="https://www.linkedin.com/in/jay-kamble-425892366" target="_blank" className="text-primary hover:underline">Profile</a></li>
           <li><span className="text-muted-foreground w-20 inline-block">GitHub:</span> <a href="https://github.com/jaykamble009" target="_blank" className="text-primary hover:underline">Profile</a></li>
         </ul>
       </div>

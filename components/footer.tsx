@@ -74,7 +74,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com/in/jaykamble" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <a href="https://www.linkedin.com/in/jay-kamble-425892366" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
                     <span className="md:hidden">LinkedIn</span>
                     <span className="hidden md:inline">LinkedIn</span>
                     <Linkedin className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />

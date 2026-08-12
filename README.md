@@ -113,7 +113,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 - **Role**: Full Stack Developer
 - **Degree**: B.Sc. in Information Technology (Deogiri College, BAMU)
 - **GitHub**: [@JayKamble009](https://github.com/jaykamble009)
-- **LinkedIn**: [Jay Kamble](https://linkedin.com/in/jaykamble)
+- **LinkedIn**: [Jay Kamble](https://www.linkedin.com/in/jay-kamble-425892366)
 - **Email**: [jk365242@gmail.com](mailto:jk365242@gmail.com)
 
 ---

@@ -55,7 +55,7 @@ const defaultHeroContent: HeroContent = {
     "Passionate about creating innovative web solutions with modern technologies. I specialize in React, Next.js, and building scalable applications.",
   resumeUrl: "/resume.pdf",
   githubUrl: "https://github.com/jaykamble009",
-  linkedinUrl: "https://linkedin.com/in/jay-kamble",
+  linkedinUrl: "https://www.linkedin.com/in/jay-kamble-425892366",
   email: "jk365242@gmail.com",
 }
 

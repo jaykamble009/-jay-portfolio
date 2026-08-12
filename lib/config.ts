@@ -7,7 +7,7 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/jaykamble",
     github: "https://github.com/jaykamble009",
-    linkedin: "https://linkedin.com/in/jaykamble"
+    linkedin: "https://www.linkedin.com/in/jay-kamble-425892366"
   },
   creator: "Jay Kamble",
   author: "Jay Kamble",

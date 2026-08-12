@@ -5,9 +5,6 @@ import projectsData from '@/data/projects.json'
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
-    '/about',
-    '/projects',
-    '/contact',
     '/privacy',
     '/terms'
   ].map((route) => ({
