@@ -1,13 +1,13 @@
 export const siteConfig = {
   name: "Jay Kamble | Full Stack Developer | Next.js & React Developer Portfolio",
-  description: "Jay Kamble is a Full Stack Developer from Chhatrapati Sambhajinagar (Aurangabad), Maharashtra. A B.Sc. Information Technology Graduate specializing as a Next.js Developer and React Developer. Explore the portfolio of Jay Kamble (JayKamble009).",
+  description: "Jay Kamble (JayKamble009) is a Full Stack Developer & AI SaaS Engineer based in Chhatrapati Sambhajinagar (Aurangabad), Maharashtra, India. B.Sc. Information Technology Graduate from Deogiri College (BAMU). Creator of PDFino (AI PDF SaaS editor), Next Class Quiz (EdTech portal), and EventHub (MERN event platform). Specializes in Next.js, React, TypeScript, Node.js, and Supabase.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://jaykamble009.in",
   ogImage: "/og/portfolio-banner.png",
   featuredRepos: ["pdfino", "classquiz", "event-management"],
   links: {
     twitter: "https://twitter.com/jaykamble",
     github: "https://github.com/jaykamble009",
-    linkedin: "https://www.linkedin.com/in/jay-kamble-425892366"
+    linkedin: "https://www.linkedin.com/in/jaykamble009"
   },
   creator: "Jay Kamble",
   author: "Jay Kamble",

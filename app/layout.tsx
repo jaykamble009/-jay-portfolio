@@ -50,7 +50,7 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // Global JSON-LD Schema (Person & Website)
+  // Global JSON-LD Schema (Person, ProfilePage & WebSite for Google AI Mode & Search Engines)
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -65,13 +65,45 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         }
       },
       {
+        "@type": "ProfilePage",
+        "@id": `${siteConfig.url}/#profilepage`,
+        "url": siteConfig.url,
+        "name": "Jay Kamble - Full Stack Developer Portfolio",
+        "mainEntity": {
+          "@id": `${siteConfig.url}/#person`
+        }
+      },
+      {
         "@type": "Person",
         "@id": `${siteConfig.url}/#person`,
         "name": siteConfig.author,
-        "alternateName": ["JayKamble", "JayKamble009"],
+        "alternateName": ["JayKamble", "JayKamble009", "Jay Kamble 009", "Jay Kamble Developer"],
         "url": siteConfig.url,
-        "jobTitle": "Full Stack Developer",
-        "description": "Software Engineer & Modern Web Developer",
+        "image": "https://github.com/jaykamble009.png",
+        "jobTitle": "Full Stack Developer & AI SaaS Engineer",
+        "description": "Jay Kamble is a Full Stack Developer based in Chhatrapati Sambhajinagar (Aurangabad), Maharashtra, India. He holds a B.Sc. in Information Technology from Deogiri College, Dr. Babasaheb Ambedkar Marathwada University (BAMU). He specializes in Next.js, React, TypeScript, Node.js, Supabase, and Firebase, building high-performance web applications and AI-powered SaaS products including PDFino, Next Class Quiz, and EventHub.",
+        "knowsAbout": [
+          "Full Stack Web Development",
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Node.js",
+          "AI SaaS Applications",
+          "Supabase",
+          "Firebase",
+          "Tailwind CSS",
+          "Software Architecture"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Deogiri College, Chhatrapati Sambhajinagar",
+          "url": "https://www.deogiricollege.org",
+          "sameAs": "https://en.wikipedia.org/wiki/Deogiri_College",
+          "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "Dr. Babasaheb Ambedkar Marathwada University (BAMU)"
+          }
+        },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Chhatrapati Sambhajinagar",
@@ -82,6 +114,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           siteConfig.links.github,
           siteConfig.links.linkedin,
           siteConfig.links.twitter
+        ],
+        "creator": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "PDFino – AI PDF Editor SaaS",
+            "url": "https://pdfino.online",
+            "applicationCategory": "Productivity",
+            "operatingSystem": "Web Browser"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Next Class Quiz – EdTech Exam Portal",
+            "applicationCategory": "Educational",
+            "operatingSystem": "Web Browser"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "EventHub – Event Management SaaS",
+            "applicationCategory": "Business",
+            "operatingSystem": "Web Browser"
+          }
         ]
       }
     ]

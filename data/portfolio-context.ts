@@ -30,7 +30,7 @@ export const portfolioContext = {
   contact: {
     email: "jk365242@gmail.com",
     github: "https://github.com/jaykamble009",
-    linkedin: "https://www.linkedin.com/in/jay-kamble-425892366",
+    linkedin: "https://www.linkedin.com/in/jaykamble009",
     resume: "/resume.pdf"
   }
 }
