@@ -79,7 +79,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "name": siteConfig.author,
         "alternateName": ["JayKamble", "JayKamble009", "Jay Kamble 009", "Jay Kamble Developer"],
         "url": siteConfig.url,
-        "image": "https://github.com/jaykamble009.png",
+        "image": {
+          "@type": "ImageObject",
+          "@id": `${siteConfig.url}/#person-image`,
+          "url": `${siteConfig.url}/jay-kamble-full-stack-developer.png`,
+          "contentUrl": `${siteConfig.url}/jay-kamble-full-stack-developer.png`,
+          "caption": "Jay Kamble - Full Stack Developer & AI Engineer",
+          "description": "Official Profile Photo of Jay Kamble (JayKamble009), Full Stack Developer based in Chhatrapati Sambhajinagar, Maharashtra"
+        },
         "jobTitle": "Full Stack Developer & AI SaaS Engineer",
         "description": "Jay Kamble is a Full Stack Developer based in Chhatrapati Sambhajinagar (Aurangabad), Maharashtra, India. He holds a B.Sc. in Information Technology from Deogiri College, Dr. Babasaheb Ambedkar Marathwada University (BAMU). He specializes in Next.js, React, TypeScript, Node.js, Supabase, and Firebase, building high-performance web applications and AI-powered SaaS products including PDFino, Next Class Quiz, and EventHub.",
         "knowsAbout": [

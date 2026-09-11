@@ -48,8 +48,9 @@ export function HeroSection() {
             >
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary via-accent to-purple-500 blur-md opacity-70 animate-pulse" />
               <img 
-                src="https://github.com/jaykamble009.png" 
-                alt="Jay Kamble Full Stack Developer" 
+                src="/jay-kamble-full-stack-developer.png" 
+                alt="Jay Kamble - Full Stack Developer & AI Engineer (JayKamble009)" 
+                title="Jay Kamble - Full Stack Developer"
                 className="relative w-full h-full rounded-full object-cover border-2 border-background z-10 shadow-2xl"
               />
             </motion.div>

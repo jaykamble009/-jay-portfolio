@@ -75,12 +75,14 @@ export function AboutSection() {
                     <span className="text-xs font-semibold text-green-400">Open to Work</span>
                   </div>
 
-                  {/* Avatar / Developer Illustration */}
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 border-4 border-background flex items-center justify-center mb-6 shadow-xl relative overflow-hidden mt-4">
-                    <Terminal className="w-12 h-12 text-primary" />
-                    {/* Floating icons around avatar */}
-                    <Code2 className="absolute top-4 left-4 w-4 h-4 text-secondary opacity-50" />
-                    <Sparkles className="absolute bottom-6 right-4 w-4 h-4 text-accent opacity-50" />
+                  {/* Avatar / Profile Picture */}
+                  <div className="w-32 h-32 rounded-full border-4 border-background flex items-center justify-center mb-6 shadow-xl relative overflow-hidden mt-4 group-hover:scale-105 transition-transform duration-300">
+                    <img 
+                      src="/jay-kamble-full-stack-developer.png" 
+                      alt="Jay Kamble - Full Stack Developer & Software Engineer (JayKamble009)" 
+                      title="Jay Kamble"
+                      className="w-full h-full object-cover rounded-full"
+                    />
                   </div>
 
                   <h3 className="text-2xl font-bold text-foreground mb-2">{aboutData.profile.name}</h3>
