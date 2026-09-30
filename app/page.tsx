@@ -1,13 +1,23 @@
+'use client'
+
+import dynamic from "next/dynamic"
 import { GlowingOrb } from "@/components/glowing-orb"
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { ProjectsSection } from "@/components/projects-section"
-import { GithubDashboard } from "@/components/github-dashboard"
 import { SkillsSection } from "@/components/skills-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
-import { AIAssistantWidget } from "@/components/ai-assistant-widget"
+
+// Dynamic lazy loading for heavy off-screen widgets to optimize bundle size
+const GithubDashboard = dynamic(() => import("@/components/github-dashboard").then(mod => mod.GithubDashboard), {
+  ssr: true,
+})
+
+const AIAssistantWidget = dynamic(() => import("@/components/ai-assistant-widget").then(mod => mod.AIAssistantWidget), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
