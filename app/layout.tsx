@@ -5,6 +5,7 @@ import { ScrollProgress } from "@/components/scroll-progress"
 import { TerminalProvider } from "@/components/terminal-provider"
 import { siteConfig } from "@/lib/config"
 import { Toaster } from "sonner"
+import { OfflineGameOverlay } from "@/components/offline-game-overlay"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -168,6 +169,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ScrollProgress />
           <TerminalProvider>
             {children}
+            <OfflineGameOverlay />
             <Toaster position="bottom-center" theme="system" />
           </TerminalProvider>
         </ThemeProvider>

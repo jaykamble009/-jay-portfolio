@@ -53,7 +53,7 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="/resume.pdf" download="Jay_Kamble_Resume.pdf" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Resume
                   </a>
                 </li>

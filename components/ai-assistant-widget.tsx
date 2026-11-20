@@ -204,7 +204,8 @@ export function AIAssistantWidget() {
                             <a
                               key={idx}
                               href={act.href}
-                              target="_blank"
+                              download={act.href.endsWith('.pdf') ? "Jay_Kamble_Resume.pdf" : undefined}
+                              target={act.href.endsWith('.pdf') ? undefined : "_blank"}
                               rel="noopener noreferrer"
                               className="inline-flex items-center text-[11px] px-3 py-1 rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 font-semibold"
                             >
@@ -243,7 +244,8 @@ export function AIAssistantWidget() {
                   <a
                     key={idx}
                     href={qa.href}
-                    target="_blank"
+                    download={qa.href.endsWith('.pdf') ? "Jay_Kamble_Resume.pdf" : undefined}
+                    target={qa.href.endsWith('.pdf') ? undefined : "_blank"}
                     rel="noopener noreferrer"
                     className="whitespace-nowrap text-[11px] px-3 py-1 rounded-full bg-white/5 hover:bg-primary/20 border border-white/10 text-muted-foreground hover:text-primary transition-colors font-medium shrink-0"
                   >

@@ -118,7 +118,16 @@ export function Terminal({ isOpen, onClose }: { isOpen: boolean, onClose: () => 
     }
 
     if (action === 'link' && payload) {
-      window.open(payload, '_blank')
+      if (payload.endsWith('.pdf')) {
+        const link = document.createElement('a')
+        link.href = payload
+        link.download = 'Jay_Kamble_Resume.pdf'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+      } else {
+        window.open(payload, '_blank')
+      }
     }
 
     setHistory(prev => [...prev, { command: cmd, output }])

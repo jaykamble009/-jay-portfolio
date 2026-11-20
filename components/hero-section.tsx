@@ -6,6 +6,7 @@ import { ArrowDown, Download, Sparkles } from "lucide-react"
 import { motion } from "framer-motion"
 import { TextScramble } from "@/components/text-scramble"
 import { DeveloperWorkspace } from "./developer-workspace"
+import { ResumePreviewModal } from "@/components/resume-preview-modal"
 import heroData from "@/data/hero.json"
 
 export function HeroSection() {
@@ -92,7 +93,7 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-wrap gap-3 sm:gap-4 items-center pt-1"
             >
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/resume.pdf" download="Jay_Kamble_Resume.pdf">
                 <Button
                   size="lg"
                   className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-7 h-11 sm:h-12 rounded-xl shadow-lg shadow-primary/25 text-sm sm:text-base"
@@ -100,6 +101,8 @@ export function HeroSection() {
                   <Download className="mr-2 h-4 w-4" /> Download Resume
                 </Button>
               </a>
+
+              <ResumePreviewModal />
 
               <Button
                 variant="outline"

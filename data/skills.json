@@ -1,6 +1,6 @@
 {
   "featured": [
-    "React.js", "Next.js", "TypeScript", "Python", "SQL", "Power BI", "Tailwind CSS", "PostgreSQL", "Supabase", "GitHub"
+    "React.js", "Next.js", "TypeScript", "Python", "Power BI", "Tailwind CSS", "Firebase", "Supabase", "Cursor", "GitHub"
   ],
   "learning": {
     "title": "Currently Learning",
@@ -31,7 +31,8 @@
       "icon": "Server",
       "skills": [
         { "name": "Node.js", "desc": "JavaScript runtime environment." },
-        { "name": "Express.js", "desc": "Web framework for Node.js." }
+        { "name": "Express.js", "desc": "Web framework for Node.js." },
+        { "name": "REST APIs", "desc": "Robust API design and endpoint development." }
       ]
     },
     {
@@ -39,10 +40,11 @@
       "title": "Database",
       "icon": "Database",
       "skills": [
-        { "name": "SQL", "desc": "Structured Query Language." },
+        { "name": "Firebase (Firestore, Auth)", "desc": "Real-time NoSQL DB and user authentication." },
+        { "name": "Supabase", "desc": "PostgreSQL database with edge functions." },
+        { "name": "MySQL", "desc": "Relational database management system." },
         { "name": "PostgreSQL", "desc": "Advanced open source RDBMS." },
-        { "name": "Supabase", "desc": "Open source Firebase alternative." },
-        { "name": "Firebase", "desc": "BaaS platform by Google." }
+        { "name": "SQL", "desc": "Structured Query Language for complex queries." }
       ]
     },
     {
@@ -51,8 +53,8 @@
       "icon": "Code2",
       "skills": [
         { "name": "JavaScript", "desc": "Web programming language." },
-        { "name": "TypeScript", "desc": "Typed JavaScript." },
-        { "name": "Python", "desc": "Versatile high-level language." },
+        { "name": "TypeScript", "desc": "Typed JavaScript for scalable applications." },
+        { "name": "Python", "desc": "Versatile high-level programming language." },
         { "name": "SQL", "desc": "Database query language." }
       ]
     },
@@ -63,32 +65,34 @@
       "skills": [
         { "name": "Power BI", "desc": "Business analytics service by Microsoft." },
         { "name": "SQL", "desc": "Data extraction and manipulation." },
-        { "name": "Data Visualization", "desc": "Graphical representation of data." },
-        { "name": "Dashboard Development", "desc": "Building interactive data views." }
+        { "name": "Data Visualization", "desc": "Graphical representation of business metrics." },
+        { "name": "Dashboard Development", "desc": "Building interactive executive views." }
       ]
     },
     {
       "id": "tools",
-      "title": "Tools & Platforms",
+      "title": "Tools & Deployment",
       "icon": "Wrench",
       "skills": [
-        { "name": "Git", "desc": "Version control system." },
-        { "name": "GitHub", "desc": "Hosting for software development." },
+        { "name": "Cursor", "desc": "AI-first code editor for accelerated engineering." },
+        { "name": "GitHub Copilot", "desc": "AI pair programming and code synthesis." },
+        { "name": "Git & GitHub", "desc": "Version control and collaborative pipelines." },
         { "name": "VS Code", "desc": "Source-code editor." },
-        { "name": "Postman", "desc": "API platform for developers." },
-        { "name": "Figma", "desc": "Collaborative interface design tool." },
-        { "name": "Vercel", "desc": "Deployment and hosting platform." },
-        { "name": "npm", "desc": "Package manager for JavaScript." }
+        { "name": "Postman", "desc": "API testing and platform tools." },
+        { "name": "Vercel", "desc": "Deployment and Edge Network hosting." },
+        { "name": "Netlify", "desc": "Modern cloud web platform hosting." },
+        { "name": "AWS (S3 & EC2)", "desc": "Cloud storage and server compute fundamentals." }
       ]
     },
     {
       "id": "ai",
-      "title": "AI & Development",
+      "title": "AI-First Engineering",
       "icon": "Bot",
       "skills": [
-        { "name": "AI Integration", "desc": "Implementing AI models via APIs." },
-        { "name": "Prompt Engineering", "desc": "Optimizing LLM interactions." },
-        { "name": "REST APIs", "desc": "Web services architecture." }
+        { "name": "AI-Assisted Development", "desc": "Shipping 40% faster using structured LLM workflows." },
+        { "name": "Prompt Engineering", "desc": "Optimizing generative models for code synthesis." },
+        { "name": "AI-driven Refactoring", "desc": "Architecture review and clean code modernization." },
+        { "name": "System Design", "desc": "Scalable web architecture and state management." }
       ]
     }
   ]
