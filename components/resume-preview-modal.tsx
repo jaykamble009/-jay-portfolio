@@ -84,11 +84,28 @@ export function ResumePreviewModal() {
 
               {/* PDF Viewer Body */}
               <div className="flex-1 w-full bg-zinc-900/50 p-2 sm:p-4">
-                <iframe
-                  src="/resume.pdf#view=FitH"
-                  className="w-full h-full rounded-xl border border-white/5 bg-white"
-                  title="Jay Kamble Resume Preview"
-                />
+                <object
+                  data="/resume.pdf#view=FitH"
+                  type="application/pdf"
+                  className="w-full h-full rounded-xl border border-white/5 bg-white shadow-inner block"
+                >
+                  <iframe
+                    src="/resume.pdf#view=FitH"
+                    className="w-full h-full rounded-xl border border-white/5 bg-white"
+                    title="Jay Kamble Resume Preview"
+                  >
+                    <div className="flex flex-col items-center justify-center h-full p-8 text-center text-zinc-900">
+                      <FileText className="w-12 h-12 text-primary mb-3" />
+                      <p className="text-base font-bold mb-1">Resume Ready</p>
+                      <p className="text-sm text-zinc-600 mb-4">Click below to open or download the PDF file.</p>
+                      <Button asChild className="rounded-xl bg-primary">
+                        <a href="/resume.pdf" download="Jay_Kamble_Resume.pdf">
+                          Download Jay_Kamble_Resume.pdf
+                        </a>
+                      </Button>
+                    </div>
+                  </iframe>
+                </object>
               </div>
 
               {/* Bottom Bar */}
